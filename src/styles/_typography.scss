@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 // @import "./variable;
-
+@import "./variable";
 * {
   box-sizing: border-box;
 }
@@ -19,4 +19,19 @@ li {
 }
 a {
   text-decoration: none;
+}
+.badge {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+
+  &-primary {
+    background-color: $primary-color;
+    color: $white;
+  }
 }
