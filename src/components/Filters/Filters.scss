@@ -1,0 +1,33 @@
+@import "../../styles/variable";
+.filter_content {
+  .ant-collapse {
+    background-color: transparent;
+    border: none;
+    .ant-collapse-item {
+      .ant-collapse-header {
+        text-align: left;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-secondary;
+        padding: 16px 0;
+      }
+      .ant-collapse-header-text {
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .ant-collapse-content {
+      .ant-collapse-content-box {
+        padding: 0;
+      }
+    }
+  }
+  .filter_panel {
+    text-align: left;
+    max-height: 230px;
+    overflow-y: auto;
+  }
+}

@@ -1,9 +1,10 @@
 import Link from "antd/es/typography/Link";
 import React from "react";
 import Filters from "../Filters/Filters";
-import { Checkbox } from "antd";
+import { Checkbox, Space } from "antd";
+import "./LeftSidebar.scss";
 const filterPanel1 = [
-  <div className="filter-field">
+  <Space direction="vertical">
     <Checkbox value={"Blockchain"}>Blockchain</Checkbox>
     <Checkbox value={"Cloud Aggregator"}>Cloud Aggregator</Checkbox>
     <Checkbox value={"Cloud Management"}>Cloud Management</Checkbox>
@@ -11,10 +12,10 @@ const filterPanel1 = [
     <Checkbox value={"Digital Markerting"}>Digital Markerting</Checkbox>
     <Checkbox value={"E-Commerce"}>E-Commerce</Checkbox>
     <Checkbox value={"Kafka"}>Kafka</Checkbox>
-  </div>,
+  </Space>,
 ];
 const filterPanel2 = [
-  <div className="filter-field">
+  <Space direction="vertical">
     <Checkbox value={"Africa"}>Africa</Checkbox>
     <Checkbox value={"Australia"}>Australia</Checkbox>
     <Checkbox value={"Canada"}>Canada</Checkbox>
@@ -22,10 +23,10 @@ const filterPanel2 = [
     <Checkbox value={"Europe - South"}>Europe - South</Checkbox>
     <Checkbox value={"Europe - North"}>Europe - North</Checkbox>
     <Checkbox value={"Europe - West"}>Europe - West</Checkbox>
-  </div>,
+  </Space>,
 ];
 const filterPanel3 = [
-  <div className="filter-field">
+  <Space direction="vertical">
     <Checkbox value={"Startup"}>Startup</Checkbox>
     <Checkbox value={"Enterprise"}>Enterprise</Checkbox>
     <Checkbox value={"MNC's"}>MNC's</Checkbox>
@@ -33,7 +34,7 @@ const filterPanel3 = [
     <Checkbox value={"SHO"}>SHO</Checkbox>
     <Checkbox value={"Finance"}>Finance</Checkbox>
     <Checkbox value={"BMC"}>BMC</Checkbox>
-  </div>,
+  </Space>,
 ];
 const Leftsidebar = () => {
   return (

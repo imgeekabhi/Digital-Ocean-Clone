@@ -1,5 +1,6 @@
 import { Collapse } from "antd";
 import React from "react";
+import "./Filters.scss";
 const { Panel } = Collapse;
 
 const Filters = ({ filterPanel1, filterPanel2, filterPanel3 }) => {
@@ -13,7 +14,15 @@ const Filters = ({ filterPanel1, filterPanel2, filterPanel3 }) => {
         onChange={onChange}
         expandIconPosition=""
       >
-        <Panel header="Partner profile" key="1">
+        <Panel
+          header={
+            <>
+              <span>Partner profile</span>
+              <span className="badge badge-primary">3</span>
+            </>
+          }
+          key="1"
+        >
           <div className="filter_panel">{filterPanel1}</div>
         </Panel>
         <Panel header="Services" key="2">
