@@ -17,7 +17,7 @@ const Filters = ({ filterPanel1, filterPanel2, filterPanel3 }) => {
         <Panel
           header={
             <>
-              <span>Partner profile</span>
+              <span>Partner Profile</span>
               <span className="badge badge-primary">3</span>
             </>
           }
