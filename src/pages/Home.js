@@ -9,11 +9,12 @@ const Home = () => {
     <div>
       <Banner />
       <div className="container py-48">
-        <Row>
-          <Col>
+        <Row gutter={[20, 0]}>
+          <Col span={6}>
             <Leftsidebar />
           </Col>
-          <Col>
+
+          <Col span={18}>
             <div className="filter-tags">
               <Tags value={"Blockchain"} closable={true} className="tag-grey" />
               <Tags
