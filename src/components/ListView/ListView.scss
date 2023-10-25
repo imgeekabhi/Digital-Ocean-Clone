@@ -1,0 +1,15 @@
+@import "../../styles/variable";
+.listing {
+  text-align: left;
+  &_header {
+    padding: 20px 0 16px;
+    border-bottom: 2px solid $border-color;
+    h5 {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      color: $text-secondary;
+      margin: 0;
+    }
+  }
+}

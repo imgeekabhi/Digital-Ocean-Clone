@@ -1,0 +1,19 @@
+@import "../../styles/variable";
+.listing_card {
+  padding: 24px 0;
+  border-bottom: 1px solid $grey-color;
+  &_wrap {
+    align-items: flex-start;
+  }
+  &_title {
+    display: flex;
+    align-items: center;
+    h4 {
+      margin: 12px;
+    }
+  }
+  &_content {
+    margin: 0 0 12px;
+    font-size: 16px;
+  }
+}
